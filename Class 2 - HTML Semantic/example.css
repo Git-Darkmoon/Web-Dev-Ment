@@ -1,0 +1,17 @@
+span {
+  background-color: crimson;
+}
+
+.geometricFig {
+  width: 200px;
+  height: 200px;
+  background-color: pink;
+}
+
+#square {
+  margin-bottom: 1rem;
+}
+
+#circle {
+  border-radius: 50%;
+}
