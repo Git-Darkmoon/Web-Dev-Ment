@@ -15,3 +15,20 @@ span {
 #circle {
   border-radius: 50%;
 }
+
+th {
+  background-color: crimson;
+  color: #eee;
+  padding-block: 0.5rem;
+}
+
+tr:nth-child(even) {
+  background-color: salmon;
+}
+tr:nth-child(odd) {
+  background-color: rgb(251, 170, 162);
+}
+
+td {
+  padding: 1rem;
+}

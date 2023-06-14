@@ -1,0 +1,63 @@
+/* CSS -> Cascading Style Sheets */
+
+/* selectores {
+    propiedades: valor
+} */
+
+/* Selectores (por orden jerarquico): 
+- Attributes.
+- Id.
+- Classes.
+- HTML Tags.
+- Selector Universal.
+*/
+
+body {
+  background-color: blanchedalmond;
+}
+
+.parrafo {
+  background-color: aquamarine;
+}
+
+#parrafoUnico {
+  background-color: cadetblue;
+  color: aliceblue;
+}
+
+[href] {
+  background-color: blueviolet;
+}
+
+.btn {
+  background-color: orange;
+  cursor: pointer;
+
+  margin-left: 100px;
+  padding-inline: 50px;
+  padding-block: 10px;
+  /* border: weight borderStyle borderColor */
+  border: 100px solid black;
+
+  /* padding-left: 50px; */
+}
+
+/* UNITS: 
+
+Statics: (No USARLAS)
+px , ch, cm, pt.
+
+
+Relatives:
+
+rem, em , vmin, vmax, vw (vieportWidth), vh (viewportHeight), %.
+
+rem , em ==> 16 px.
+
+*/
+
+.ruler {
+  width: 25pt;
+  height: 5pt;
+  background-color: #fff;
+}

@@ -1,0 +1,38 @@
+body {
+  background-color: #eee;
+}
+
+.geometry {
+  width: 8.75rem;
+  height: 8.75rem;
+  /* width: 300px;
+  height: 300px; */
+  /* margin-left: 200px; */
+}
+
+#square {
+  background-color: goldenrod;
+  margin-block: 30px;
+}
+
+.miniSquare {
+  background-color: salmon;
+  width: 10%;
+  height: 10%;
+  margin-block: 0.5rem;
+}
+
+.miniSquare:nth-child(odd) {
+  background-color: #fff;
+}
+
+#circle {
+  background-color: violet;
+  border-radius: 100%;
+
+  width: 50vw;
+  height: 50vh;
+
+  border: 10px solid black;
+  padding: 10px;
+}
