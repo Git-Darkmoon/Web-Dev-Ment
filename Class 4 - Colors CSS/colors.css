@@ -1,0 +1,93 @@
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: #141414;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 95vw;
+  margin: auto 2rem;
+}
+
+.container .titles {
+  color: salmon;
+}
+
+p {
+  color: #eee;
+}
+
+article #uniqueParagraph + img {
+  width: 10rem;
+}
+
+article > p {
+  font-size: 1.5rem;
+}
+
+/* Colors:
+
+- rgb === RGBa: rgba(red, green, blue, alpha)
+    * 0 - 255 
+    * alpha === opacity. (0 - 1)
+- hsl === HSLa: Hue Saturation Lightness.
+    * Hue (0 - 360)
+    * Saturation (0% - 100%)
+    * Lightness (0% - 100%)
+
+- HEX:
+    #redGreenBlue --> 0 (min value) f (max value)
+    trios de a un digito o trios de parejas.
+    max lenght -> 6 digits.
+    ( 0 - 9 && a - f)
+
+
+hsl(360, 80%, 90%)
+hsl(360, 80%, 80%)
+hsl(360, 80%, 70%)
+hsl(360, 80%, 60%)
+hsl(360, 80%, 50%)
+hsl(360, 80%, 40%)
+hsl(360, 80%, 30%)
+hsl(360, 80%, 20%)
+hsl(360, 80%, 10%)
+*/
+
+.square {
+  width: 9rem;
+  height: 9rem;
+  margin-block: 2rem;
+  margin-inline: auto;
+  background-color: hsl(348, 83%, 47%);
+}
+
+/* Fonts:
+
+- font-family: como se ve la letra
+- font-weight: grosor de la letra (100 [mas delgada] - 900 [mas gruesa])
+- font-size: tamanho de la letra
+- font-style: estilo de la letra(italica, cursiva...)
+
+*/
+
+h2 {
+  color: #fa0;
+  font-family: "Kablammo", cursive;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 2rem; /* clamp( ) -> Fluid Typograhphy */
+}
+
+h3 {
+  color: hsla(0, 0%, 50%, 0.75);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  /* text-decoration: underline dashed salmon; */ /* Shorthand */
+  /* text-decoration-line: underline;
+  text-decoration-style: dashed;
+  text-decoration-color: salmon; */
+  letter-spacing: 0.34rem;
+}
