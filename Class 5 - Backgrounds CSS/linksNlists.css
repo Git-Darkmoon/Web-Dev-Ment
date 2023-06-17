@@ -1,0 +1,30 @@
+body {
+  background-color: #141414;
+}
+
+a {
+  color: #eee;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+a:hover {
+  color: #fa0;
+}
+
+/* a:link {
+  color: lime;
+} */
+
+a:visited {
+  color: #a1d;
+}
+
+::marker {
+  color: red;
+  font-size: 2rem;
+}
+
+ol {
+  list-style: decimal-leading-zero;
+}

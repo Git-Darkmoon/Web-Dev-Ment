@@ -1,0 +1,53 @@
+body {
+  /* background-image: linear-gradient(30deg, #fa0, gold, salmon); */
+  /* background-image: url("../assets/sun_9-wallpaper-1920x1080.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: fixed; */
+  /* background-size: 100vw 100vh; */
+  background-color: #232124;
+  /* shorthand */
+  /* background: url("../assets/sun_9-wallpaper-1920x1080.jpg") no-repeat; */
+
+  font-family: "Quicksand", sans-serif;
+}
+
+section {
+  background-color: #eec0c6;
+  background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+
+  border-top-left-radius: 4rem;
+  border-bottom-right-radius: 4rem;
+  /* border-top-right-radius: 4rem; */
+
+  margin-inline: 2rem;
+}
+
+a {
+  text-decoration: none;
+  /* text-transform: capitalize; */
+
+  color: #eee;
+}
+
+p:first-child {
+  /* border-width: 10px;
+  border-style: solid;
+  border-color: rgb(255, 0, 43); */
+
+  border: 0.75rem solid #fafafa;
+  border-radius: 4rem;
+}
+
+p:nth-child(2) {
+  border-left: 1rem ridge rgb(128, 0, 255);
+}
+
+span {
+  color: #eee;
+}
+
+h5 {
+  color: #fa0;
+  text-indent: 20rem;
+}
