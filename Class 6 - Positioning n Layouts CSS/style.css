@@ -22,27 +22,37 @@ main h1 {
 }
 
 .container {
-  width: 100%;
+  width: 50%;
   height: 30rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  column-gap: 2rem;
 }
 
-.square:nth-child(even) {
-  align-self: start;
+.square {
+  transition: all 0.3s ease;
 }
+
+.square:hover {
+  flex-grow: 1;
+}
+
+/* .square:nth-child(even) {
+  align-self: start;
+} */
 
 .square:nth-child(odd) {
-  align-self: end;
+  /* align-self: end; */
   /* justify-self: end; */
 }
 
 .square /* ---> Flex item */ {
-  width: 112px;
-  height: 112px;
+  width: 7rem;
+  height: 7rem;
   background-color: crimson;
-  margin: 0.5rem;
+  /* margin: .5rem; */
   transition: opacity 0.2s;
   /* position: absolute;
   top: 50%;

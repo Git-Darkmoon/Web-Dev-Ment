@@ -1,0 +1,58 @@
+body {
+  background-color: #eee;
+}
+
+/* CSS Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: #242424;
+  width: 100vw;
+  height: 5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.navbar-flex {
+  /* width: 60%; */
+  height: 5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 2rem;
+}
+
+li {
+  list-style: none;
+}
+
+.links {
+  text-decoration: none;
+  color: #eee;
+  font-family: sans-serif;
+  transition: color 0.3s ease;
+  font-size: 1.35rem;
+}
+
+.links:hover {
+  color: #fa0;
+}
+
+#searchBar {
+  width: 25%;
+  /* align-self: center; */
+  font-size: 1rem;
+  padding-inline: 0.5rem;
+  padding-block: 0.3rem;
+  border-radius: 0.2rem;
+  outline: none;
+}
