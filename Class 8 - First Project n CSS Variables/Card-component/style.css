@@ -1,0 +1,108 @@
+:root {
+  --clr-brightOrange: hsl(31, 77%, 52%);
+  --clr-darkCyan: hsl(184, 100%, 22%);
+  --clr-veryDarkCyan: hsl(179, 100%, 13%);
+  --clr-white-700: hsl(0, 0%, 95%); /* background, headings, buttons */
+  --clr-white-500: hsla(0, 0%, 100%, 0.75); /* (paragraphs): */
+
+  --fs-base: 0.9375rem;
+
+  --ff-base: "Lexend Deca", sans-serif;
+  --ff-heading: "Big Shoulders Display", cursive;
+  --radius: 0.4rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--clr-white-700);
+}
+
+.container {
+  width: 98vw;
+  height: 90vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .mainCard {
+  width: 60vmax; /*  --> Maximum Viewport */
+  height: 90vh;
+  border-radius: var(--radius);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container .mainCard .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vmax;
+  padding: 2rem;
+  font-family: var(--ff-base);
+
+  flex-grow: 1;
+}
+
+.container .mainCard .card:has(h1, .cardBtn) {
+  color: var(--clr-white-700);
+}
+
+.container .mainCard .card h1 {
+  font-family: var(--ff-heading);
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+.container .mainCard .card p {
+  color: var(--clr-white-500);
+}
+
+.container .mainCard .card .cardBtn {
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  background-color: var(--clr-white-700);
+  text-transform: capitalize;
+  border-radius: 2rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: var(--clr-brightOrange);
+  transition: all 0.3s ease;
+}
+
+.container .mainCard .card .cardBtn:hover {
+  scale: 1.1;
+}
+.container .mainCard .card > * + * {
+  margin-top: 1rem;
+}
+
+.container .mainCard .card:first-child {
+  background-color: var(--clr-brightOrange);
+}
+.container .mainCard .card:nth-child(2) {
+  background-color: var(--clr-darkCyan);
+}
+.container .mainCard .card:nth-child(3) {
+  background-color: var(--clr-veryDarkCyan);
+}
+
+@media (width >= 48rem) {
+  .container .mainCard {
+    flex-direction: row;
+  }
+
+  .container .mainCard .card {
+    height: 30rem;
+  }
+}
