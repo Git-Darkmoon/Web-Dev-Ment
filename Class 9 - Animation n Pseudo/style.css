@@ -1,0 +1,150 @@
+body {
+  background-color: #212121;
+  overflow: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.square {
+  width: 20vmax;
+  height: 20vmax;
+  background-color: lime;
+  border-radius: 1rem;
+
+  /* animation-name: bgChange;
+  animation-duration: 20s;
+  animation-timing-function: ease;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: both; */
+
+  animation: change 2s ease infinite, rotate 5s ease infinite,
+    circle 3s ease-in infinite;
+}
+
+img {
+  width: 100%;
+  animation: resize 1s ease infinite;
+}
+
+/* Animations */
+
+@keyframes change {
+  0% {
+    /*  --> 0s */
+    background-color: khaki;
+    scale: 1;
+  }
+
+  50% {
+    /* --> 15s */
+    background-color: gold;
+    scale: 1.5;
+  }
+
+  100% {
+    /* --> 20s */
+    background-color: khaki;
+    scale: 1;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes circle {
+  0% {
+    border-radius: 0;
+  }
+  50% {
+    border-radius: 100%;
+  }
+  100% {
+    border-radius: 0;
+  }
+}
+
+@keyframes resize {
+  0% {
+    width: 20vmax;
+    height: 20vmax;
+  }
+  50% {
+    width: 35vmax;
+    height: 35vmax;
+  }
+  100% {
+    width: 20vmax;
+    height: 20vmax;
+  }
+}
+
+.squareContainer {
+  width: 30vmax;
+  height: 25vmax;
+  background-color: #eee;
+
+  position: relative;
+}
+.movingSquare {
+  width: calc(30vmax - 60%);
+  height: calc(25vmax - 60%);
+
+  position: absolute;
+
+  background-color: #fa0;
+
+  animation: move 6s ease-out infinite;
+}
+
+@keyframes move {
+  0% {
+    top: 0;
+    left: 0;
+  }
+
+  25% {
+    top: 0;
+    right: calc(30vmax - 60%);
+  }
+
+  50% {
+    bottom: 0;
+    right: 0;
+  }
+
+  75% {
+    bottom: 0;
+    left: 100%;
+  }
+
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
