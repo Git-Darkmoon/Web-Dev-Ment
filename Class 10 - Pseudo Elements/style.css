@@ -1,0 +1,136 @@
+:root {
+  --clr-black: #121212;
+  --clr-green: lightgreen;
+  --clr-blue: lightskyblue;
+}
+
+/* Custom scrollbar like Mac OS
+Not supports in Firefox and IE */
+
+/* total width */
+body::-webkit-scrollbar {
+  background-color: var(--clr-black);
+  width: 1rem;
+}
+
+/* background of the scrollbar except button or resizer */
+body::-webkit-scrollbar-track {
+  background-color: var(--clr-black);
+}
+
+/* scrollbar itself */
+body::-webkit-scrollbar-thumb {
+  background-color: var(--clr-green);
+  border-radius: 1rem;
+  border: 0.25rem solid var(--clr-black);
+}
+
+/* set button(top and bottom of the scrollbar) */
+body::-webkit-scrollbar-button {
+  display: none;
+}
+
+body {
+  background-color: var(--clr-black);
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+
+  color: #eee;
+}
+
+/*
+
+---> Pseudo Elements
+
+ ::marker
+ ::selection
+ ::first-letter
+ ::first-line
+
+*/
+
+.wrapper ul li {
+  font-size: 2rem;
+  max-width: 40ch;
+}
+
+.wrapper ul li::marker {
+  color: var(--clr-blue);
+}
+
+.wrapper ul li::selection {
+  background-color: transparent;
+  color: var(--clr-green);
+}
+
+.wrapper ul li::first-letter {
+  color: goldenrod;
+  font-size: 5rem;
+}
+
+.wrapper ul li::first-line {
+  color: lightcoral;
+  letter-spacing: -2px;
+}
+
+/*  before,after  */
+
+.square::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+
+  background-color: var(--clr-green);
+  opacity: 0.3;
+
+  position: absolute;
+
+  left: -1rem;
+  bottom: -1rem;
+
+  transition: all 0.3s ease;
+}
+
+.square {
+  width: 35vmax;
+  height: 35vmax;
+
+  background-color: var(--clr-green);
+  border-radius: 12px;
+
+  position: relative;
+}
+
+/* https://images.pexels.com/photos/1398195/pexels-photo-1398195.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 */
+
+.square::after {
+  position: absolute;
+  content: "";
+  background-image: url("https://images.pexels.com/photos/1398195/pexels-photo-1398195.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: #12121282;
+
+  transition: opacity 0.5s ease-out;
+}
+
+.square:hover::after {
+  opacity: 0.5;
+}
+
+.square:hover::before {
+  transform: translate(1rem, -1rem);
+}
