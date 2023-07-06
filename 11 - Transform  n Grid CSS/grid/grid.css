@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121212;
+}
+
+.grid-container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 1fr);
+  /* grid-template-rows: repeat(2, 1fr); */
+  gap: 5rem;
+}
+
+.square {
+  width: 100%;
+  height: 100%;
+
+  background-color: lightskyblue;
+}
+
+.square:first-child {
+  background-color: lightgreen;
+  /* grid-column: 3/1; */
+}
+
+.square:last-child {
+  background-color: lightsalmon;
+  /* grid-column: 2/3; */
+}

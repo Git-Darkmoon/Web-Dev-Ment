@@ -1,0 +1,43 @@
+body {
+  background-color: rgb(39, 39, 145);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  background-color: #eee;
+  width: 20rem;
+  height: 10rem;
+
+  display: grid;
+  place-items: center;
+}
+
+.logos {
+  display: flex;
+  gap: 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkblue;
+  padding: 1rem;
+  border-radius: 9px;
+}
+
+.logo img {
+  transition: all 0.3s ease;
+}

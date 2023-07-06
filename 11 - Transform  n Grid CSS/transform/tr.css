@@ -1,0 +1,29 @@
+body {
+  background-color: #212121;
+  overflow: hidden;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.circle {
+  width: 10vmax;
+  height: 10vmax;
+  background-color: #fa0;
+  /* border-radius: 100%; 
+
+  /* 50% -> 0.5 */
+  /* 200% -> 2 */
+
+  transform:  /* skew(30deg, 45deg) */ translateX(-2rem) translateY(2rem);
+  transition: all 0.5s ease-in;
+}
+
+.circle:hover {
+  background-color: hsl(40, 100%, 70%);
+  transform: rotate(45deg) scale(2);
+}
