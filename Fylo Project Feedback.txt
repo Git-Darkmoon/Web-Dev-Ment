@@ -1,0 +1,35 @@
+Fylo Project Feedback:
+
+* Victor 9 / 15:
+	+++ Design fidelity.
+	+ Meta tags.
+	++ Source img tag, responsive imgs.
+	+ Output tag, onInput event JS.
+	+ Class naming.
+	+ Good usage of pseudo elements.
+	
+	- Not readable size.
+	- Different sizes on all icons.
+	- TOO MUCH responsive.
+	- Not mobile first design.
+	- Some unnecessary code lines (before n after)
+	- Could've been good a footer.
+
+* Ruben 8 / 15: 
+	+++ Design Fidelity
+	++ GB design.
+	+ Good usage of Pseudo Elements
+	+ Early post.
+	+ Mobile First Design.
+
+	- Not using meta tags.
+	- There's no alt="" value in the icons.
+	- Slider it's not an input.
+	- Semantic could be better.
+	- If there's a footer should generate overflow.
+	- Not fully responsive
+	- Handling of variables could be better.
+
+
+	
+	
