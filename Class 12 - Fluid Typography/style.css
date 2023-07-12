@@ -41,3 +41,21 @@ p {
     color: white;
   }
 }
+
+.social ul {
+  display: flex;
+  gap: 5rem;
+}
+
+.social ul li {
+  list-style: none;
+}
+
+.social ul li a {
+  font-size: var(--fs-4);
+  color: var(--clr-white);
+}
+
+.social ul li a:hover {
+  color: lightpink;
+}

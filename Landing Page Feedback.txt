@@ -5,7 +5,7 @@ Landing Page (Project 4):
 	+ Meta Tags.
 	+ Semantic HTML.
 	+ Alt attr values.
-	+ Responsive functionality.
+	+? Responsive functionality.
 	+ Mobile First design.
 	
 	--- Design Fidelity
