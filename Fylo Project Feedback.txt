@@ -9,8 +9,8 @@ Fylo Project Feedback:
 	+ Good usage of pseudo elements.
 	
 	- Not readable size.
-	- Different sizes on all icons.
 	- TOO MUCH responsive.
+	- Different sizes on all icons.
 	- Not mobile first design.
 	- Some unnecessary code lines (before n after)
 	- Could've been good a footer.

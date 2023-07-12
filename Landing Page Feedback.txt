@@ -1,0 +1,34 @@
+Landing Page (Project 4):
+
+*Ruben (6/10):
+	+ Good variables usage. 
+	+ Meta Tags.
+	+ Semantic HTML.
+	+ Alt attr values.
+	+ Responsive functionality.
+	+ Mobile First design.
+	
+	--- Design Fidelity
+	? Class != Id.
+	- There's no state styles.
+
+*Victor (6/10):
+	+ Meta Tags.
+	+ Responsiveness.
+	+ Semantic HTML.
+	+ Variables.
+	+ Mobile First.
+	+ Pro logo.
+
+	-- Design Fidelity.
+	- Font readibility.
+	- Class reusability.
+
+
+
+
+
+
+
+
+
