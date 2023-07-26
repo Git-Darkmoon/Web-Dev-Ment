@@ -1,4 +1,4 @@
-console.log("Hello world")
+// console.log("Hello world")
 
 // "Variables"
 
@@ -10,7 +10,7 @@ let actualYear = 2023
 
 // console.log("La f de nacimiento de " + NOMBRE + " es: " + (actualYear - age))
 
-// template strings (` `) ( Spanish keyboard => altGr + ]} )
+// template strings (` `) ( Spanish keyboard => altGr + ]} OR alt + 96 )
 
 let message = `${NOMBRE}'s Birth year: ${actualYear - age}`
 
@@ -21,11 +21,13 @@ let message = `${NOMBRE}'s Birth year: ${actualYear - age}`
 // name = "No tiene nombre"
 // console.log(`Hello ${name}`)
 
-let num1 = 5
+// let num1 = 5
 // let augment = prompt("Enter the increase amount: ") /* prompt returns string */
 // let augmentValue = parseInt(augment)
 // let result = num1 + augmentValue
+// let result = num1 + augment
 // console.log(result)
+// console.log(typeof result)
 
 // NaN => Not a Number
 
@@ -55,6 +57,6 @@ Non-Primitives:
 - Symbol => object
 */
 
-// let orange = null
+let orange = new Map()
 
-// console.log(orange)
+// console.log(`Orange has the value of: ${typeof orange}`)
