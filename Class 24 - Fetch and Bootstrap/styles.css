@@ -1,0 +1,29 @@
+/*
+Frameworks CSS:
+ Tailwind CSS -> Styles.
+ Bootstrap -> Components.
+*/
+
+/* .ttf True Type Font -> woff2 / woff*/
+
+@font-face {
+  font-family: "Inter", sans-serif;
+  src: url(Fonts/Inter-Regular.ttf) format("truetype");
+}
+
+:root {
+  font-family: "Inter", sans-serif;
+}
+
+.title {
+  text-align: center;
+  padding-block: 2rem;
+  color: aliceblue;
+}
+
+.wrapper {
+  padding-inline: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1rem;
+}
